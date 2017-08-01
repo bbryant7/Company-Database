@@ -19,7 +19,7 @@ body {
 .bio p {
 
   text-align: center;
-  color: B8B8B8;
+
 }
 
 h1 {
@@ -36,8 +36,9 @@ img {
 .name{
 
   font-weight: bold;
+  text-align: center;
   width: fit-content;
-  margin: 0;
+  margin: 0 auto;
   text-transform: uppercase;
   border-bottom: 2px solid #54B386;
 }
@@ -52,6 +53,7 @@ img {
   font-size: 12px;
   text-transform: capitalize;
   margin: 5px;
+  color: #B8B8B8;
 }
 
 .ss {
