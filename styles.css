@@ -1,0 +1,60 @@
+body {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#directory{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1390px;
+  margin: auto;
+
+}
+
+.bio {
+  max-width: 25%;
+}
+
+.bio p {
+
+  text-align: center;
+  color: B8B8B8;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  align-items: center;
+  padding: 20px;
+}
+
+.name{
+
+  font-weight: bold;
+  width: fit-content;
+  margin: 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid #54B386;
+}
+
+.email {
+  text-transform: uppercase;
+  color: #D6D6D6;
+  font-size: 12px;
+}
+
+.info {
+  font-size: 12px;
+  text-transform: capitalize;
+  margin: 5px;
+}
+
+.ss {
+  color: #54B386;
+  font-size: 12px;
+}

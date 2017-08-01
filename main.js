@@ -25,7 +25,7 @@ for (var i = 0; i < cust.length; i++) {
   let city = cust[i].location.city;
   let state = cust[i].location.state;
   let zip = cust[i].location.postcode;
-  let address = `${street} ${city}, ${state} ${zip}`;
+  let address = ` ${city}, ${state} ${zip}`;
   let phone = cust[i].cell;
   let ss = cust[i].id.value;
 
@@ -37,11 +37,12 @@ bio.setAttribute('class', 'bio' );
 let companyDirectory =
   `
   <img src=${picture} alt="employee">
-  <p> ${fullName} </p>
-  <p> ${email} </p>
-  <p> ${address} </p>
-  <p> ${phone} </p>
-
+  <p class="name"> ${fullName} </p>
+  <p class="email"> ${email} </p>
+  <p class="info"> ${street} </p>
+  <p class="info"> ${address} </p>
+  <p class="info"> ${phone} </p>
+  <p class="ss"> ${ss} </p>
  `;
 
 bio.innerHTML = companyDirectory;
