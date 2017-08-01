@@ -1,19 +1,8 @@
-
+const cust = customers.results;
 
 // Variables
 
-const cust = customers.results[0];
-let picture = cust.picture.large;
-let firstName = cust.name.first;
-let lastName = cust.name.last;
-let fullName = `${firstName} ${lastName}`;
-let email = cust.email;
-let street = cust.location.street;
-let city = cust.location.city;
-let state = cust.location.state;
-let zip = cust.location.postcode;
-let address = `${street} ${city}, ${state} ${zip}`;
-let phone = cust.cell;
+
 // testing
 // console.log(fullName);
 // console.log(email);
@@ -22,30 +11,43 @@ let phone = cust.cell;
 // console.log(picture);
 
 // loop for divs
+// for (var i = 0; i < cust.length; i++) {
+//
+// }
 for (var i = 0; i < cust.length; i++) {
 
-}
+  let picture = cust[i].picture.large;
+  let firstName = cust[i].name.first;
+  let lastName = cust[i].name.last;
+  let fullName = `${firstName} ${lastName}`;
+  let email = cust[i].email;
+  let street = cust[i].location.street;
+  let city = cust[i].location.city;
+  let state = cust[i].location.state;
+  let zip = cust[i].location.postcode;
+  let address = `${street} ${city}, ${state} ${zip}`;
+  let phone = cust[i].cell;
+  let ss = cust[i].id.value;
+
 const divContainer = document.getElementById("directory");
-console.log(divContainer);
 let bio = document.createElement("div");
-console.log(bio);
 divContainer.appendChild(bio);
 bio.setAttribute('class', 'bio' );
-console.log(divContainer);
 
-
-// template for one person
 let companyDirectory =
   `
-<div id="wrapper">
-<h1> Internal Company Directory </h1>
-<div>
   <img src=${picture} alt="employee">
   <p> ${fullName} </p>
   <p> ${email} </p>
   <p> ${address} </p>
   <p> ${phone} </p>
-</div>
-</div>
-`
-document.querySelector('body').innerHTML = companyDirectory;
+
+ `;
+
+bio.innerHTML = companyDirectory;
+
+}
+
+// template for one person
+
+// document.querySelector('#directory').innerHTML = companyDirectory;
